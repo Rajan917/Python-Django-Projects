@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="1">
+    <link rel="stylesheet" href="{% static 'countsec/css/bootstrap.css'%}">
+    <style>
+        h1{
+            font-family: cursive;
+        }
+        body.html{
+            height: 100%;
+        }
+    </style>
+    <title>Counter</title>
+</head>
+<body class="bg-dark">
+    <div class="container d-flex align-items-center justify-content-center h-100">
+        <h1 class="text-warning display-2">Counter: <span class="text-white">{{ct}}</span></h1>
+    </div>
+    <script src="{% static 'countsec/js/jquery.js' %}"></script>
+    <script src="{% static 'countsec/js/popper.js' %}"></script>
+    <script src="{% static 'countsec/js/bootstrap.js' %}"></script>
+</body>
+</html>
